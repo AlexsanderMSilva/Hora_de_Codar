@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade4</title>
+</head>
+<body>
+
+    <Script>
+
+        var resposta = prompt("Informe a forma da figura que você deseja saber a área? \n Retângulo -> 1 \n Quadrado -> 2 \n Losango -> 3 \n Trapézio -> 4 \n Paralelogramo -> 5 \n Triângulo -> 6 \n Círculo -> 7")
+
+        if (resposta == 1) {
+
+            var base = parseInt(prompt("Informe o valor da base:"));
+            var altura = parseInt(prompt("Informe o valor da altura:"));
+            var resultado = base * altura;
+
+            document.write("A área da forma é " + resultado + ".");
+
+        }
+        
+        else if (resposta == 2) {
+
+            var lado = parseInt(prompt("Qual o valor de um dos lados do quadrado?"));
+            var resultado = lado * lado;
+
+            document.write("A área da respectiva forma é " + resultado + ".");
+
+        }
+        
+        else if (resposta == 3) {
+
+            var diagonalMenor = parseInt(prompt("Qual o valor da diagonal menor do losango?"));
+            var diagonalMaior = parseInt(prompt("Qual o valor da diagonal maior do losango?"));
+            var resultado = (diagonalMaior * diagonalMenor) / 2;
+
+            document.write("A área da respectiva forma é " + resultado + ".");
+
+        }
+        
+        else if (resposta == 4) {
+
+            var baseMaior = parseInt(prompt("Qual o valor da base maior do Trapézio?"));
+            var baseMenor = parseInt(prompt("Qual o valor da base maior do Trapézio?"));
+            var altura = parseInt(prompt("Qual o valor da altura do Trapézio?"));
+            var resultado = ((baseMaior + baseMenor) * altura) / 2;
+
+            document.write("A área da respectiva forma é " + resultado + ".");
+
+        }
+        
+        else if (resposta == 5) {
+
+            var base = parseInt(prompt("Qual o valor da base?"));
+            var altura = parseInt(prompt("Qual o valor da altura?"));
+            var resultado = base * altura;
+
+            document.write("A área da respectiva forma é " + resultado + ".");
+
+        }
+        
+        else if (resposta == 6) {
+
+            var base = parseInt(prompt("Qual o valor da base?"));
+            var altura = parseInt(prompt("Qual o valor da altura?"));
+            var resultado = (base * altura) / 2;
+
+            document.write("A área da respectiva forma é " + resultado + ".");
+
+        }
+
+        else {
+
+            var raio = parseInt(prompt("Qual o valor do raio do círculo?"));
+            var resultado = 3.14 * (raio * raio);
+
+            document.write("A área da respectiva forma é " + resultado + ".");
+        }
+
+    </Script>
+    
+</body>
+</html>
